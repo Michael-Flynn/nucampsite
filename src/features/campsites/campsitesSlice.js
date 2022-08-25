@@ -13,3 +13,4 @@ export const selectCampsiteById = (id) => { return CAMPSITES.find((campsite) => 
 export const selectFeaturedCampsite = () => {
   return CAMPSITES.find((campsite) => campsite.featured);
 };
+
