@@ -75,6 +75,7 @@ const UserLoginForm = () => {
                             placeholder= 'Username'
                             className="form-control"
                             />
+                            <ErrorMessage name='username'>{(msg) => <p className='text-danger'>{msg}</p>}</ErrorMessage>
                         </FormGroup>
                         <FormGroup>
                             <Label htmlFor="password">Password</Label>
@@ -84,6 +85,7 @@ const UserLoginForm = () => {
                             placeholder ='Password'
                             className="form-control"
                             />
+                            <ErrorMessage name='password'>{(msg) => <p className='text-danger'>{msg}</p>}</ErrorMessage>
                         </FormGroup>
                         <Button type='submit' color='primary'>Login</Button>
                     </Form>
